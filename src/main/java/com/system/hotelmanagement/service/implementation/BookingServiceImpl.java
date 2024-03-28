@@ -39,7 +39,7 @@ public class BookingServiceImpl implements BookingService {
         updateToBooking.setCheckOut(booking.getCheckOut());
         updateToBooking.setCustomer(booking.getCustomer());
         updateToBooking.setRoomType(booking.getRoomType());
-        return null;
+        return bookingRepository.save(updateToBooking);
     }
 
     @Override

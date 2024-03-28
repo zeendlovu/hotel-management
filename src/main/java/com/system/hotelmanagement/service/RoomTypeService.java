@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface RoomTypeService {
-    List<Room> getAllRoomTypes();
-    public Optional<RoomType> getRoomTypeById(Long id);
-    public Room createRoomType(Room room);
-    Room updateRoomType(Long id, Room room);
+    List<RoomType> getAllRoomTypes();
+    Optional<RoomType> getRoomTypeById(Long id);
+    RoomType createRoomType(RoomType roomType);
+    RoomType updateRoomType(Long id, RoomType roomType);
     void deleteRoomType(Long id);
 }

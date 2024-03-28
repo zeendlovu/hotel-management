@@ -20,11 +20,11 @@ public class Booking {
     private LocalDate checkOut;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id")
+    @JoinColumn(name = "customerId")
     private Customer customer;
 
     @ManyToOne
-    @JoinColumn(name = "roomType_id")
+    @JoinColumn(name = "roomTypeId")
     private RoomType roomType;
 
 }

@@ -17,7 +17,7 @@ public class Room {
     private int roomNumber;
 
     @ManyToOne
-    @JoinColumn(name = "roomType_id")
+    @JoinColumn(name = "roomTypeId")
     private RoomType roomType;
 
 
